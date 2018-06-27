@@ -1,0 +1,101 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/box_background"
+    android:padding="12dp"
+    tools:context=".InventoryActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/add_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/category_add"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:background="@color/colorPrimaryDark"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/album_text_view"
+                style="@style/TextStyleMain"
+                android:background="@color/category_add"
+                android:text="Add 2 Books" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/get_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:background="@color/category_get"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:background="@color/colorPrimaryDark"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/artist_text_view"
+                style="@style/TextStyleMain"
+                android:background="@color/category_get"
+                android:text="Show Books" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/del_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:background="@color/category_del"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:background="@color/colorPrimaryDark"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/song_text_view"
+                style="@style/TextStyleMain"
+                android:background="@color/category_del"
+                android:text="Delete Books" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/books"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:text="Books" />
+
+    </LinearLayout>
+
+</ScrollView>
